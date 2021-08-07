@@ -10,6 +10,43 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# Operating System Files
+
+*.DS_Store
+Thumbs.db
+*.sw?
+.#*
+*#
+*~
+*.sublime-*
+
+# Build Artifacts
+
+.mvn/
+.gradle/
+build/
+target/
+bin/
+dependency-reduced-pom.xml
+
+# Eclipse Project Files
+
+.classpath
+.project
+.settings/
+.attach_pid*
+
+# VS Code
+.vscode/
+!.vscode/launch.json
+
+# IntelliJ IDEA Files
+
+*.iml
+*.ipr
+*.iws
+*.idea
+
 # Package Files #
 *.jar
 *.war

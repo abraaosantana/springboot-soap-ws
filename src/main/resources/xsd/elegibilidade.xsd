@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.devweb.com.br/soap/api/elegibilidade"
+	xmlns:tns="http://www.devweb.com.br/soap/api/elegibilidade"
+	elementFormDefault="qualified">
+
+	<xsd:element name="ClienteRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nome" type="xsd:string" />
+				<xsd:element name="idade" type="xsd:int" />
+				<xsd:element name="rendaAnual" type="xsd:long" />
+				<xsd:element name="pontuacao" type="xsd:int" />
+				<xsd:element name="modalidadeEmprego" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Situacao">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="elegivel" type="xsd:boolean" />
+				<xsd:element name="valorAprovado" type="xsd:long" />
+				<xsd:element name="criterioIncompativel"
+					type="xsd:string" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
